@@ -84,8 +84,8 @@ converts implicitly any object to string.
 >`message_format: str`, default: `"[{date} - {time}] : {message}"`
 >> you can set it to your own message and then you 
 can add keyword arguments to `logger.log`, for example:
->>>
-```python
+>>> `logger.log("hello")` will log `hello`, without date or time.
+ ```python
 from CycLog import CycleLogger
 
 logger = CycleLogger(
