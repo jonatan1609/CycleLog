@@ -9,7 +9,7 @@ so you can only have latest logs which you need to figure out the error, to repr
 
 ### basic example:
 ```python
-from CyLog import CycleLogger
+from CycLog import CycleLogger
 
 logger = CycleLogger(
     file_name="your_project.log"
@@ -37,7 +37,7 @@ which will be logged:
 Since the default max lines is 500, we got the entire log. let's try to change it to 5:
 
 ```python
-from CyLog import CycleLogger
+from CycLog import CycleLogger
 
 logger = CycleLogger(
     file_name="your_project.log",
@@ -86,7 +86,7 @@ converts implicitly any object to string.
 can add keyword arguments to `logger.log`, for example:
 >>>
 ```python
-from CyLog import CycleLogger
+from CycLog import CycleLogger
 
 logger = CycleLogger(
     file_name="your_project.log",

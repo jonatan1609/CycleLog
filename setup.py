@@ -5,7 +5,7 @@ with open("README.md", encoding="u8") as readme:
     long_description = readme.read()
 
 setuptools.setup(
-    name="CyLog",
+    name="CycLog",
     version="1.0.0",
     author="Jonatan",
     author_email="pybots.il@gmail.com",
