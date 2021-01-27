@@ -1,7 +1,7 @@
 from itertools import islice
 from typing import IO
 
-from .utils import BaseCycleLogger
+from .utils import BaseCycleLogger, register_at_exit
 
 __all__ = ["CycleLogger"]
 
@@ -97,3 +97,6 @@ class CycleLogger(BaseCycleLogger):
             self.file.truncate(0)
             self.file.write(self.file.read())
         self.file.write(message.rstrip('\n') + '\n')
+
+
+register_at_exit(CycleLogger)
