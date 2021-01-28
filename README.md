@@ -1,6 +1,6 @@
 # CycleLog
 
-This library will let you log into a cyclic file easily. You
+This library will let you log into a cyclic file easily.
 
 ####  What is a cycle log?
 - A cycle log is a log file which does not keep more than N lines, once the log reaches N lines the logger will delete older lines from the beginning,
@@ -77,6 +77,7 @@ converts implicitly any object to string.
 
 
 >if both `include_time` and `include_date` will be False, a log will only show the message itself.
+>> `logger.log("hello")` will log `hello`, without date or time.
 
 > `max_lines: int`, default: `500`.
 >>Determines the maximum of lines in a file.
@@ -84,7 +85,7 @@ converts implicitly any object to string.
 >`message_format: str`, default: `"[{date} - {time}] : {message}"`
 >> you can set it to your own message and then you 
 can add keyword arguments to `logger.log`, for example:
->>> `logger.log("hello")` will log `hello`, without date or time.
+
  ```python
 from CycLog import CycleLogger
 
