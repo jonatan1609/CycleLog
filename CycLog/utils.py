@@ -13,6 +13,8 @@ class BaseCycleLogger:
     FILE_MODE = "a+"
     file: IO
     message_format: str
+    time_format: str
+    date_format: str
 
     def _set_format_message(self, message_format: str, include_date: bool, include_time: bool):
         if message_format == self.MESSAGE_FORMAT:
@@ -34,8 +36,8 @@ class BaseCycleLogger:
         """
         now = datetime.now()
         return {
-            "date": now.strftime(self.DATE_FORMAT),
-            "time": now.strftime(self.TIME_FORMAT)
+            "date": now.strftime(self.date_format),
+            "time": now.strftime(self.time_format),
         }
 
     @property
