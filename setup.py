@@ -6,7 +6,7 @@ with open("README.md", encoding="u8") as readme:
 
 setuptools.setup(
     name="CycLog",
-    version="1.0.2",
+    version="1.1.1",
     author="Jonatan",
     author_email="pybots.il@gmail.com",
     description="A python module to handle cyclic logs.",
@@ -14,7 +14,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/jonatan1609/CycleLog",
     packages=setuptools.find_packages(),
-    classfiers=[
+    classifiers=[
         "License :: OSI Approved :: The Unlicense (Unlicense)",
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
