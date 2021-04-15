@@ -72,7 +72,7 @@ class CycleLogger(BaseCycleLogger):
         Returns:
             IO - a log file.
         """
-        file = open(file_name, mode)
+        file = open(file_name, mode, buffering=1)
         file.seek(0)
         CycleLogger.open_files.append(file)
         return file
