@@ -57,7 +57,7 @@ And now we only get the last 5 lines.
 
 ```
 
-In principle you can gives any object that has `__str__` method, `logger.log` 
+In principle, you can give any object that has `__str__` method, `logger.log` 
 converts implicitly any object to string.
 
 
